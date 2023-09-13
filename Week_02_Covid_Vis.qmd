@@ -48,3 +48,5 @@ The difference between the number of deaths and hosp and the number of cases has
 I am not able to compare diff race count with others in one plot.
 4. What other data would be useful to better understand this data?
 "covid_data_orig" is useful for displaying cases, deaths and hosp in white.
+
+
