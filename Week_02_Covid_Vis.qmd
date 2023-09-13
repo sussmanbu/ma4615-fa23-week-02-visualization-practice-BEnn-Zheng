@@ -36,6 +36,15 @@ covid_data_count |>
 ```
 
 1. Write code for a plot and describe what you observe?
+```{r}
+  covid_data_race |>
+  filter(state=="NY") |>
+  ggplot(aes(x = date,y = Cases, color = race)) + geom_line()
+```
+I made a line plot by using "covid_date_race" data set,It describes how many new crown cases, deaths, and hosp there are among whites over time. The case line has a large slope, and the line for deaths and hosp is almost close to zero compared to the case line.
 2. Are there any conclusions you can draw?
+The difference between the number of deaths and hosp and the number of cases has been increasing over time. As a result, there is an exponential increase in the number of cases, but a relatively small increase in the number of deaths and hosp.
 3. What were you not able to do due to not having the R knowledge?
+I am not able to compare diff race count with others in one plot.
 4. What other data would be useful to better understand this data?
+"covid_data_orig" is useful for displaying cases, deaths and hosp in white.
